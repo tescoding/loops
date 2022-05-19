@@ -44,10 +44,11 @@ class User extends Authenticatable
 
     public function getpost()
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(Post::class, 'id', 'user_id');
     }
-    public function getomment()
+
+    public function getcomment()
     {
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(Comment::class,'post_id','id');
     }
 }

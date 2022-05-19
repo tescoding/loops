@@ -16,7 +16,12 @@ class Post extends Model
         'content',
     ];
 
-    public function getuser() {
-        return $this->hasMany(User::class);
+    public function detailpenulis() {
+        return $this->belongsTo(User::class,'user_id','id');
     }
+
+    // public function comments()
+    // {
+    //     return $this->hasMany(Comment::class);
+    // }
 }
