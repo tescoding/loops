@@ -11,6 +11,5 @@ class MainController extends Controller
     public function getListUser(){
         $data = User::with('getcomment')->get();
         return response()->json($data);
-        
     }
 }

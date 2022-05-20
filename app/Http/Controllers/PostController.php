@@ -13,8 +13,5 @@ class PostController extends Controller
         ]);
     }
 
-    public function getGuest(){
-        $data = "Kosong";
-        return response()->json($data);
-    }
+
 }

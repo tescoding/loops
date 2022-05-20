@@ -17,9 +17,7 @@
                     <p>{{ $k->content }}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <a href="berita/{{$k->slug}}">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Selengkapnya ...</button>
-                            </a>
                         </div>
                         <small class="text-muted">{{ $k->created_at->format('d M Y') }}</small>
                     </div>
